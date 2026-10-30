@@ -49,10 +49,6 @@ git push -u origin main
    (Free tier "dorme" por inatividade: abra a URL uns 50 s antes de apresentar.)
    Para o Insomnia, troque `base_url` no Base Environment pela URL do Render.
 
-## Roteiro da apresentação (a partir do Deploy)
-1. Mostrar o serviço *Live* no Render e as variáveis de ambiente (sem credenciais no código).
-2. Abrir `/pokemon` (lista com preço `R$ 59,90` e datas `dd/MM/yyyy`).
-3. **Cadastrar** pelo formulário → aparece na lista.
 4. Tentar cadastrar com dados inválidos (data futura, preço negativo) → erros de validação.
 5. **Editar** (formulário preenchido) → salvar → lista atualizada.
 6. **Excluir** (confirmação) → some da lista.
