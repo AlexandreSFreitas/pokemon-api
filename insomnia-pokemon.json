@@ -1,0 +1,84 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "resources": [
+    {
+      "_id": "wrk_1",
+      "_type": "workspace",
+      "name": "Pokemon API",
+      "scope": "collection"
+    },
+    {
+      "_id": "env_1",
+      "_type": "environment",
+      "parentId": "wrk_1",
+      "name": "Base Environment",
+      "data": {
+        "base_url": "http://localhost:8080"
+      }
+    },
+    {
+      "_id": "req_1",
+      "_type": "request",
+      "parentId": "wrk_1",
+      "name": "cadastro",
+      "method": "POST",
+      "url": "{{ _.base_url }}/api/pokemon",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"Pikachu\",\n  \"tipo\": \"Elétrico\",\n  \"preco\": 59.9,\n  \"dataDeNascimento\": \"2020-02-27\",\n  \"dataDeCaptura\": \"2024-05-10\",\n  \"urlImagem\": \"https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png\"\n}"
+      }
+    },
+    {
+      "_id": "req_2",
+      "_type": "request",
+      "parentId": "wrk_1",
+      "name": "consulta",
+      "method": "GET",
+      "url": "{{ _.base_url }}/api/pokemon",
+      "headers": []
+    },
+    {
+      "_id": "req_3",
+      "_type": "request",
+      "parentId": "wrk_1",
+      "name": "consulta código",
+      "method": "GET",
+      "url": "{{ _.base_url }}/api/pokemon/1",
+      "headers": []
+    },
+    {
+      "_id": "req_4",
+      "_type": "request",
+      "parentId": "wrk_1",
+      "name": "atualiza",
+      "method": "PUT",
+      "url": "{{ _.base_url }}/api/pokemon/1",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"Pikachu\",\n  \"tipo\": \"Elétrico\",\n  \"preco\": 59.9,\n  \"dataDeNascimento\": \"2020-02-27\",\n  \"dataDeCaptura\": \"2024-05-10\",\n  \"urlImagem\": \"https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png\"\n}"
+      }
+    },
+    {
+      "_id": "req_5",
+      "_type": "request",
+      "parentId": "wrk_1",
+      "name": "apaga",
+      "method": "DELETE",
+      "url": "{{ _.base_url }}/api/pokemon/1",
+      "headers": []
+    }
+  ]
+}
