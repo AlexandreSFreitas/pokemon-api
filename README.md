@@ -1,4 +1,4 @@
-# Pokémon API — Praticando (Aulas 44–49)
+# Pokémon API — Praticando 
 
 API Restful em Spring Boot 3.3 / Java 21 / Oracle com front-end Thymeleaf + Bootstrap.
 
